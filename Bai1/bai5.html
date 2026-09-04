@@ -7,16 +7,31 @@
     <style>
         
         h2{
-            color:azure;
-            background-color:brown;
+            color:rgb(243, 255, 240);
+            background-color:rgb(99, 42, 165);
         }
         h3{
             color:bisque;
-            background-color:blue;
+            background-color:rgb(255, 0, 43);
+        }
+        .khoi-1{
+            background-color: antiquewhite;
+        }
+         .khoi-2{
+            background-color: rgb(224, 215, 250);
+            /* margin truyền 1 giá trị thì sẽ cách xung quanh =giá trị đó */
+            margin: 10px;50px; 100px;200px
+            /*giá trị đầu trên dưới;giá trị sau trái phải*/
+             /*giá trị đầu trên dưới;giá trị sau trên phải dưới trái*/
+        }
+         .khoi-3{
+            background-color: rgb(220, 250, 215);
+            padding:50px;100px;150px;200px;
         }
 
     </style>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css" >
+
 </head>
 <body>
     <!--  Cách 1: Inline style  -->
@@ -24,9 +39,21 @@
       <!-- background-color : Quy định màu nền  -->
       <h1>BÀI TẬP</h1>
       <!-- cách 2: -->
-       <h2>huonggggg</h2>
+       <!-- vidu trên :tieude-1 -->
+       <h2 id="tieude-1">huonggg</h2>
        <!-- Cách 3: external style -->
-        <h3>baihuongdan</h3>
+        <!-- nếu là class sử dụng dấu . + class -->
+        <h3 class="tieude-2">.baihuongdan</h3>
+        <!-- nếu là id sử dụng dấu # + tên id -->
+         <div>wed4</div>
+         <div class="wed4">wed4</div>
+         <div class="khoi-1">khối-1</div>
+         <div class="khoi-2">khối-2</div>
+         <div class=khoi-3>khối-3</div>
+         
+         
+</div>
+       
 </body>
 
 </html>

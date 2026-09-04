@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cổng thông tin đào tạo HUMG</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        .menu{
+            background-color: #2fa4ef;
+        }
+        .danh-sach-muc{
+            list-style:none;
+            margin: 0px;
+            display: flex;
+
+        }
+        .muc{
+            
+            padding: 15px;
+            /*font-weight: bold;*/
+        }
+        a{
+            color: white;
+            /* Để bỏ gạch cân của thẻ a dùng text-decoration*/
+            text-decoration: none;
+        }
+        .khoi-trai{
+            background-color: blue;
+            width:20%;
+            height: 500px;
+        }
+        .khoi-phai{
+            background-color: green;
+            width:80%;
+            height:500px;
+        }
+        main{
+            display: flex;
+        }
+        form{
+            width: 90
+        }
+
+    </style>
+</head>
+<body>
+    <!--Danh mục-->
+        <nav class="menu">
+            <ul class="danh-sach-muc">
+                <li class="muc"><a href="#">Thực tập, Đồ án</a></li>
+                <li class="muc"><a href="#">Thủ tục Mở cửa</a></li>
+                <li class="muc"><a href="#">Mở cửa Online</a></li>
+                <li class="muc"><a href="#">E-mail HUMG</a></li>
+            </ul>
+        </nav>
+    <!--Nội dung chính-->   
+    <main>
+        <div class="khoi-trai"></div>
+            <div>
+                <form action="">
+                    <p>Tài khoản</p>
+                    <input type="text">
+                    <p>Mật khẩu</p>
+                    <input type="password">
+                </form>
+            </div>
+            <div>
+
+            </div>
+        <div class="khoi-phai">Right</div>
+    </main> 
+</body>
+</html>
