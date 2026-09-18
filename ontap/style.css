@@ -1,0 +1,23 @@
+body{
+
+}
+.danh-muc{
+    display: flex;
+    background-color: red;
+}
+.lien-ket{
+
+}
+.anh-moi{
+    width: 50%;
+    height: 40vh;
+    background-color: blue;
+    margin: 40px auto;
+}
+.anh-tin{
+    width: 95%;
+    height: 20vh;
+    background-color: black;
+    margin: auto;
+
+}
