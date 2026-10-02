@@ -69,11 +69,54 @@ header{
 
 
 .tron{
-    width:19%;
-    height:20vh;
+    width: 19%;
+    height: 20vh;
     img{
-        width:0px;
+        width:200px;
         height:200px;
-        border-radius:50%;
+        border-radius: 50%;
     }
 }
+ footer {
+            margin-top: 50px;
+            padding: 30px 35px;
+            background-color: #111;
+        }
+
+        .footer-cuoi-trang {
+
+            display: inline-flex;
+
+            flex-direction: column;
+
+            margin-right: 70px;
+
+            vertical-align: top;
+
+        }
+
+        .footer-cuoi-trang a {
+
+            color: #777;
+
+            font-size: 12px;
+
+            text-decoration: none;
+
+            margin-bottom: 14px;
+
+        }
+
+        .footer-cuoi-trang a:hover {
+
+            text-decoration: underline;
+
+        }
+
+        .copyright {
+
+            font-size: 11px;
+
+            margin-top: 15px;
+        }
+Soạn

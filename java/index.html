@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bài 7 - JavaScript </title>
+</head>
+<body>
+    <!--Internal Javscript-->
+    <script>
+        //Có thể thêm mã nguồn html vào trong JS
+        //Lưu ý: html phải đặt trong cặp dấu ""
+        document.writeln("Hello <br> World!");
+
+        var tenSinhvien = "Huong Trinh";
+        var tuoi = 20;
+        document.writeln(tenSinhvien + "<br>" + tuoi + "<br>"); 
+
+        var soThuNhat = 10;
+        var soThuHai = 5;
+        // + - * /
+        // % chia lấy phần dư
+        var ketQua = soThuNhat - soThuHai;
+        document.writeln("Kết quả là: "+ketQua);      
+
+        //++ --
+        document.writeln(++soThuNhat);
+        document.writeln(--soThuNhat);
+         
+        // += -= *= /=
+        // Tương đương: soThuNhat = soThuNhat + soThuHai;
+        soThuNhat+=soThuHai;
+        document.writeln(soThuNhat);
+
+         //kiểu dữ liệu
+         //string
+         //Number
+        //boolean (true/false)
+         
+        var a=5;
+        var b=5.5;
+        //chuyển string bằng number dùng: parseInt()
+        var tong =parseInt(a) + parseFloat(b);
+        document.writeln(tong);
+
+        //string
+        document.writeln("<br>");
+        //kiểm tra độ dài chuỗi length
+        document.writeln(tenSinhvien.length);
+        //nối chuỗi 
+        //var tenSinhvien= Huong
+          // kiem tra tồn tại 
+          //indexOf tìm vị trí xuất hiện đầu tiên ( có - vị trí xuất hiện đầu tiên/không có -1)
+          
+         document.writeln("<br>");
+          document.writeln(tenSinhvien.indexOf("u"));
+        
+          // includes kiểm tra xem phần tử cso kh có -true/k-false
+         document.writeln("<br>");
+         document.writeln(tenSinhvien.includes("u")); 
+
+         //replace(thay thế chuỗi )
+          document.writeln("<br>");
+         document.writeln(tenSinhvien.replace("Huong" , "Trinh")); 
+
+
+         //replace(thay thế chuỗi )
+          document.writeln("<br>");
+         document.writeln(tenSinhvien.replace("Huong" , "Trinh")); 
+         document.writeln(tenSinhvien); 
+
+         //kiểm tra ký tự bắt đầu 
+         //startswwith
+          document.writeln("<br>");
+         document.writeln(tenSinhvien.startsWith("Trinh")); 
+
+         //viết in hoa 
+         document.writeln("<br>");
+         document.writeln(tenSinhvien.toUpperCase("Trinh")); 
+
+         // viết in thường 
+         document.writeln("<br>");
+         document.writeln(tenSinhvien.toLowerCase("Trinh")); 
+
+        //number
+        //kiểm tra dữ liệu có phải số hay khôgn
+               // var a="10";
+        
+        document.writeln("<br>");
+        var kq= typeof(10);
+         document.writeln(isNaN(10)); 
+
+         //Date
+         var homNay = new Date
+          document.writeln("<br>");
+         document.writeln(homNay);
+        // khai bao ngay cu the: thang /ngay/nam
+         var ngay = new Date("10/20/2026")
+          document.writeln("<br>");
+         document.writeln(ngay);
+
+           //Lấy năm
+        var nam = homNay.getFullYear();
+        document.writeln("<br>");
+        document.writeln(nam);
+
+        //Lấy tháng
+        var thang = homNay.getMonth() + 1;
+        document.writeln("<br>");
+        document.writeln(thang);
+
+        // Lấy ngày
+        var ngay = homNay.getDate();
+        document.writeln("<br>");
+        document.writeln(ngay);
+
+        //Lấy thứ
+        var thu = homNay.getDay();
+        document.writeln("<br>");
+        document.writeln(thu);
+
+        var namSinhHuong = nam - tuoi;
+        document.writeln("<br>");
+        document.writeln("Huong sinh năm: "+ namSinhHuong);
+
+        //Mang( array)
+        var mangSo = [1,2,3,4,5];
+        var mangTen = ["Huong","Hue"];
+        var thongTin = ["Huong" ,21,false];
+
+         document.writeln("<br>");
+        document.writeln(mangSo[2]);
+
+         document.writeln("<br>");
+        document.writeln(mangTen[1]);
+
+         document.writeln("<br>");
+        document.writeln(thongTin[0]);
+
+        
+        //kiem tra do dai cua mang 
+         document.writeln("<br>");
+        document.writeln(mangSo.length);
+
+        //gop mang concat
+        var  mang= mangSo.concat(mangTen, thongTin)
+        document.writeln("<br>");
+        document.writeln(mang);
+
+        //join
+        var  mang= mangSo.concat(mangTen, thongTin)
+        document.writeln("<br>");
+        document.writeln(mangSo.join("-"));
+
+
+        //pop: lay ra so cuoi cung
+         document.writeln("<br>");
+        document.writeln(mangSo.pop());
+
+
+        //push: them 1 so 
+         document.writeln("<br>");
+         mangSo.push(6);
+        document.writeln(mangSo);
+
+
+        //reverse : dao chieu nguoc lai
+         document.writeln("<br>");
+        document.writeln(mangSo.reverse());
+
+
+        //var soThuNhat = 10;
+        //var soThuHai = 5;
+        //==
+         document.writeln("<br>");
+        document.writeln(soThuNhat == soThuHai);
+        
+        document.writeln("<br>");
+        document.writeln(soThuNhat != soThuHai);
+
+        document.writeln("<br>");
+        document.writeln(soThuNhat > soThuHai);
+
+        document.writeln("<br>");
+        document.writeln(soThuNhat < soThuHai);
+
+        document.writeln("<br>");
+        document.writeln(soThuNhat >= 9);
+
+        document.writeln("<br>");
+        document.writeln(soThuNhat);
+        document.writeln(soThuNhat <= 11);
+
+        // && ||
+         //var soThuNhat = 10;
+        //var soThuHai = 5;
+        // T&T=T
+        //T&F=F
+        //F&F=F
+       var c=10;
+        var d=5.5;
+        
+        document.writeln("<br>");
+        document.writeln((soThuNhat > soThuHai) && (c>d));
+
+
+
+        //true||false=
+        document.writeln("<br>");
+        document.writeln((soThuNhat > soThuHai) && (c<d));
+
+
+          document.writeln("<br>");
+          if(thu == 7){
+            document.writeln( "Hom nay la thu 6");
+          }
+          else{
+             document.writeln( "Hom nay khong phai la thu 6");
+
+          }
+
+          var diem = 8;
+           document.writeln("<br>");
+          if(diem <4 ){
+            document.writeln("False");
+          }
+          else {
+             document.writeln( "qua mon");
+
+          } 
+      
+
+
+          /// 0-4:F
+          //4-5:D
+          //5-7:C
+          //7-8:A
+          //8-10:A+
+          document.writeln("<br>");
+        var diem = 5;
+        if (diem >= 9) {
+            document.writeln("xuat sac");
+        }
+        else if (diem >= 8 && diem < 9) {
+            document.writeln("gioi");
+        }
+        else if (diem >= 5 && diem < 7) {
+            document.writeln("kha");
+        }
+        else if (diem < 5 && diem >= 3) {
+            document.writeln("kem");
+        }
+        else {
+        document.writeln("kem");
+        }
+
+    </script>
+
+    <!-- External JS-->
+   <!-- <script src="script.js"></script>-->
+</body>
+</html>
+
+
+
+         
+    </script>
+
+    <!-- External JS-->
+   <!-- <script src="script.js"></script>-->
+</body>
+</html>
+
